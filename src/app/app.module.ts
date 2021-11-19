@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -13,6 +15,8 @@ import { HeaderComponent } from './shared/header/header.component';
 import { ProgressComponent } from './pages/progress/progress.component';
 import { Grafica1Component } from './pages/grafica1/grafica1.component';
 import { PagesComponent } from './pages/pages.component';
+import { ComponentsModule } from './components/components.module';
+
 
 
 @NgModule({
@@ -27,11 +31,15 @@ import { PagesComponent } from './pages/pages.component';
     HeaderComponent,
     ProgressComponent,
     Grafica1Component,
-    PagesComponent
+    PagesComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ComponentsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
