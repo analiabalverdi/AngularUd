@@ -12,6 +12,7 @@ import { Grafica1Component } from './grafica1/grafica1.component';
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { sha1 } from '@angular/compiler/src/i18n/digest';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -22,12 +23,14 @@ import { sha1 } from '@angular/compiler/src/i18n/digest';
     ProgressComponent,
     Grafica1Component,
     DashboardComponent,
+    AccountSettingsComponent,
   ],
   exports:[
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
     DashboardComponent,
+    AccountSettingsComponent,
   ],
   imports: [
     FormsModule,
